@@ -1,119 +1,97 @@
-1. Setup and Preparation
+Based on the PDF document, here's a step-by-step checklist of what you need to do:
+1. Understand the Workshop Fundamentals
 
-    Create a GitHub repository named 42xunifi-structured-development-2025-<your-intra-login>
+    Read through Chapters I-IV to understand:
 
-    Set up SonarQube/SonarCloud following the instructions in Chapter XVI (pages 17-18)
+        The three pillars of Structured Development (Programming, Design, Analysis)
 
-    Organize your repository with folders for each exercise (ez00/, ez01/, etc.)
+        Key concepts of coupling (low is good) and cohesion (high is good)
 
-2. Exercise Completion (Core)
+        Evaluation criteria (reasoning behind choices is most important)
 
-Complete the 10 main exercises in order:
-Exercise 00: Average (page 7)
+        General instructions about the exercises
 
-    Create average.c and average.h in ez00/
+2. Setup Your Development Environment
 
-    Implement function float average(const int *arr, int size)
+    Create a GitHub repository named: 42xunifi-structured-development-2025<your-intra-login>
 
-    Validate inputs (0-100 range), ignore invalid values
+    Set up SonarQube/SonarCloud (follow Chapter XIII instructions)
 
-    Calculate average of valid values
+        Sign up with GitHub
 
-Exercise 01: first_last (page 8)
+        Import organization
 
-    Create first_last.c and first_last.h in ez01/
+        Authorize access to your repository
 
-    Implement function void first_last(int arr[], int size, int target, int *first, int *last)
+        Create project
 
-    Find first and last occurrence indices of target
+3. Complete the Exercises
 
-    Return -1 if target not found
+    There are 7 exercises (00-06) of increasing difficulty
 
-Exercise 02: segmented_runs (page 9)
+    For each exercise:
 
-    Create segmented_runs.c and segmented_runs.h in ez02/
+        Create the required directory (ez00/, ez01/, etc.)
 
-    Implement function int count_segments(const int *arr, int size)
+        Create the required files (.c and .h)
 
-    Identify segments separated by -1
+        Design the function hierarchy/control flow (no need for full implementations)
 
-    Count segments with increasing sequences of ≥3 consecutive numbers
+        Focus on clean, modular design with low coupling and high cohesion
 
-Exercise 03: critical_windows (page 10)
+Exercise Details:
 
-    Create critical_windows.c and critical_windows.h in ez03/
+    00: movie_planner
+    Design function hierarchy for movie night planning (get preferences → find movies → build plan)
 
-    Implement function int count_critical_windows(const int *readings, int size)
+    01: food_order
+    Design control logic for food delivery app (check status → create appropriate confirmation → send notification)
 
-    Analyze 5-day sliding windows
+    02: music_organizer
+    Design function hierarchy for music library organization (create library → scan files → process files → update library)
 
-    Check all three conditions for critical windows
+    03: workout_scheduler
+    Design workout scheduling system (get user data → build plan → refine plan → assign exercises/tips)
 
-Exercise 04: filesystem (page 11)
+    04: recipe_generator
+    Design iterative recipe generation (get ingredients → get taste profile → generate/approve recipe loop)
 
-    Create filesystem.c and filesystem.h in ez04/
+    05: playlist_creator
+    Design playlist generation (analyze mood → build/refine filters → fetch songs → create playlist)
 
-    Implement basic file system functions:
+    06: task_scheduler
+    Design multicore task scheduler (profile tasks → compute priorities → assign to cores)
 
-        create_file(), create_folder()
+4. Submission Requirements
 
-        add_child(), get_children(), get_sibling()
+    Organize exercises in their respective directories
 
-Exercise 05: password_validator (page 12)
+    Push all completed exercises to your GitHub repository before June 13 deadline
 
-    Create password_validator.c and password_validator.h in ez05/
+    Remember: Peer collaboration is encouraged but formal evaluations won't be available
 
-    Implement function PtStatus validate_password(const char *new_pw, const char *curr_pw)
+5. Quality Assurance
 
-    Check all strength rules
+    Use CCCC tool to analyze your code metrics:
 
-    Compare with current password
+        Cyclomatic complexity
 
-Exercise 06: grade_mapping (page 13)
+        Module fan-out/fan-in
 
-    Create grade_map.c and grade_map.h in ez06/
+        Other design metrics
 
-    Implement function void map_scores(const int *scores, int size, GradeMapper mapper, const char *mapped_grades)
+    Use SonarQube to get additional quality insights
 
-    Support three different mapping strategies
+Additional Notes:
 
-3. Bonus Exercises (Optional)
+    You don't need to implement full functions - focus on the design structure
 
-Complete if you have time:
-Exercise 07: filesystem manager (bonus) (page 14)
+    Code must compile but minor errors may be tolerated
 
-    Extend filesystem with:
+    42 Norm is recommended but not required
 
-        compute_total_size()
+    You can use AI tools sparingly (only after trying yourself and asking peers)
 
-        print_structure()
+    The exercises are meant to challenge you - don't worry if you can't complete all
 
-        free_filesystem()
-
-Exercise 08: Password Validator (bonus) (page 15)
-
-    Enhance password validator with:
-
-        History of last 3 passwords
-
-        Edit distance check
-
-        Expanded return status
-
-Exercise 09: Grade Mapping (bonus) (page 16)
-
-    Add grade distribution features:
-
-        compute_distribution()
-
-        print_distribution()
-
-        free_distribution()
-
-4. Submission
-
-    Push all completed exercises to your GitHub repository
-
-    Ensure everything is pushed by June 13 deadline
-
-    Verify your solutions with SonarQube analysis
+Remember that the primary focus is on your design decisions and reasoning, not just working code. Document your thought process in comments if helpful.
