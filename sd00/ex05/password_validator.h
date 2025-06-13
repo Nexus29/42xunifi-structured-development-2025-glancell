@@ -6,12 +6,12 @@
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 23:36:30 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/12 12:15:02 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/13 09:44:31 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PASSWORD_VALIDATOR_H
-#define CRITICALPASSWORD_VALIDATOR_H_WINDOWS_H
+#define PASSWORD_VALIDATOR_H
 
 #include <unistd.h>
 #include <stdio.h>
