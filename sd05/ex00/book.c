@@ -6,7 +6,7 @@
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 09:06:07 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/20 09:06:08 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/25 11:12:55 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-// Trim whitespace and lowercase a string for case-insensitive comparison.
 static char *trim_lower(char *str) {
     char *end;
     while (isspace((unsigned char)*str)) str++;

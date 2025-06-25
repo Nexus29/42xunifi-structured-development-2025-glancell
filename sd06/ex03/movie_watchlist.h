@@ -6,7 +6,7 @@
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 18:15:22 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/24 18:15:23 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/25 11:12:43 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,14 @@
 #define MAX_GENRE_LEN 50
 #define DATE_LEN 11
 
-typedef struct {
+typedef struct
+{
     char date[DATE_LEN]; // YYYY-MM-DD format
     int rating; // 1-10
 } WatchEntry;
 
-typedef struct {
+typedef struct
+{
     int id;
     char title[MAX_TITLE_LEN];
     char genre[MAX_GENRE_LEN];
@@ -31,7 +33,8 @@ typedef struct {
     int is_watched;
 } Movie;
 
-typedef struct {
+typedef struct
+{
     Movie movies[MAX_MOVIES];
     int count;
     int max_id;

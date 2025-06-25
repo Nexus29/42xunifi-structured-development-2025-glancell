@@ -6,14 +6,15 @@
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 09:05:37 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/20 09:05:42 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/25 11:13:08 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "book.h"
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     if (argc != 2) {
         fprintf(stderr, "Usage: %s <catalog_file>\n", argv[0]);
         return 1;
