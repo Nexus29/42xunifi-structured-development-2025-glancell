@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mainc.c                                            :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 23:13:32 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/24 23:13:35 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/25 11:08:42 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "contact_manager.h"
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     if (argc != 2) {
         ft_printf("Usage: %s <contacts_file.csv>\n", argv[0]);
         return 1;

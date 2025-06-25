@@ -6,7 +6,7 @@
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 18:14:25 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/24 18:14:26 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/25 11:08:30 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@
 #define MAX_DESC_LEN 100
 #define DATE_LEN 11
 
-typedef struct {
+typedef struct
+{
     char date[DATE_LEN]; // YYYY-MM-DD format
     double amount;
     char category[MAX_CATEGORY_LEN];
     char description[MAX_DESC_LEN];
 } Expense;
 
-typedef struct {
+typedef struct
+{
     Expense expenses[MAX_EXPENSES];
     int count;
 } ExpenseTracker;

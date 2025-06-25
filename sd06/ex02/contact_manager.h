@@ -6,7 +6,7 @@
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 18:14:51 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/24 18:14:52 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/25 11:08:11 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
 #define MAX_CITY_LEN 50
 #define MAX_ADDRESS_LEN 100
 
-typedef struct {
+typedef struct
+{
     int id;
     char name[MAX_NAME_LEN];
     char phone[MAX_PHONE_LEN];
@@ -29,7 +30,8 @@ typedef struct {
     char address[MAX_ADDRESS_LEN];
 } Contact;
 
-typedef struct {
+typedef struct
+{
     Contact contacts[MAX_CONTACTS];
     int count;
     int max_id;

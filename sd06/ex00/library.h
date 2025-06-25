@@ -6,7 +6,7 @@
 /*   By: glancell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 18:13:35 by glancell          #+#    #+#             */
-/*   Updated: 2025/06/24 18:13:36 by glancell         ###   ########.fr       */
+/*   Updated: 2025/06/25 11:08:34 by glancell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 #define MAX_TITLE_LEN 100
 #define MAX_AUTHOR_LEN 100
 
-typedef struct {
+typedef struct
+{
     int id;
     char title[MAX_TITLE_LEN];
     char author[MAX_AUTHOR_LEN];
